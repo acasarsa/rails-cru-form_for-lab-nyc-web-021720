@@ -1,0 +1,6 @@
+<h1>Artist Index</h1>
+<ol>
+<% @artists.each do |artist| %>
+  <li><%= link_to artist.name, artist_path(artist) %> - <%= artist.bio %> </li>
+<% end %>
+</ol>

@@ -1,0 +1,12 @@
+
+<p>
+<ol>
+<% @songs.each do |s| %>
+
+  <p><%= link_to s.name, song_path(s)%>
+<% end %>
+- <%=@artist.name%> - <%= @artist.bio %> (<%= link_to @genre.name, genre_path(@genre)%>)
+
+  </p><br>
+</ol>
+</p>
